@@ -5,15 +5,15 @@ contador = 0   # En esta variable se almacenara el numero de intentos
 
 while num:
     intento = int (input ("Introduzca un numero, entre 0 y 99, ambos incluidos: "))   # Le pedimos al usuario que introduzca un numero para adivinar el numero aleatorio
-    if 0 > intento > 99:   # Nos aseguramos d que el numero esta comprendido dentro del rango que queremos
-        print ("Introduzca un valor entre 0 y 99 por favor: ")
-    elif intento < num:
-        print ("Demasiado pequeño: ")
+    if 0 > intento or intento > 99:   # Nos aseguramos d que el numero esta comprendido dentro del rango que queremos
+        print ("Introduzca un valor entre 0 y 99 por favor")
+    elif intento < num and 99 > intento > 0:
+        print ("Demasiado pequeño")
         contador += 1
-    elif intento > num:
+    elif intento > num and 99 > intento > 0:
         print ("Demasiado grande")
         contador += 1
-    else:
+    elif intento == num and 99 > intento > 0:
         print ("¡Ha ganado! ✌")
         contador += 1
         num = False   # Cerramos el bucle while
