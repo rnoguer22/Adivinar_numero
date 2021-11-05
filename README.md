@@ -4,11 +4,16 @@ Direccion de github de este repositorio: [Github](https://github.com/rnoguer22/A
 Hemos resuelto el juego de adivinar un numero aleatorio entre 0 y 99 (ambos inclusive)
 Posteriormente, hemos hecho la parte del ejercicio llamada "Para ir mas alla", que consiste en cambiar los valores maximo y minimo que puede tomar el numero aleatorio, ambos a eleccion del usuario
 
+El diagrama de flujo de este juego es el siguiente:
+
+
+![Diagrama Flujo - Adivinar numero drawio (1)](https://user-images.githubusercontent.com/91721762/140512375-4251cf22-b85f-44a2-ba4f-8099f81b84af.png)
+
 
 El codigo del juego es el siguiente:
 
 
-import random
+```import random
 maximo = int (input ("Introzuca el valor maximo del numero aleatorio: "))   # Pedimos al usuario el valor maximo del numero aleatorio
 minimo = int (input ("Introzca el valor minimo del numero aleatorio: "))   # Pedimos al usuario el valor minimo dle numero aleatorio
 num = random.randint(minimo, maximo)   # Numero aleatorio a adivinar, entre los dos valores que nos ha dado el usuario
