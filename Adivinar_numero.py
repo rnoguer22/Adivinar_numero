@@ -20,3 +20,5 @@ while num:
         contador += 1
         num = False   # Cerramos el bucle while
         print ("Ha necesitado ", contador, " intentos para conseguirlo")
+
+# Comentario de prueba
